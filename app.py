@@ -70,7 +70,7 @@ prediction = load_clf.predict(df)
 prediction_proba = load_clf.predict_proba(df)
 
 st.subheader('Prediction')
-stroke_pre = np.array(['positive','negative'])
+stroke_pre = np.array(['likely positive','likely negative'])
 st.write(stroke_pre[prediction])
 st.subheader('Prediction probability')
 st.write(prediction_proba)
