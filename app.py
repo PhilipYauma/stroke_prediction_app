@@ -62,7 +62,7 @@ else:
     st.write('Waiting CSV file to be uploaded.Currently using example input parameters')
     st.write(df)
 
-load_clf = pkl.load(open('stroke_clf_new.pkl','rb'))
+load_clf = pkl.load(open('STK_clf_n.pkl','rb'))
 
 prediction = load_clf.predict(df)
 prediction_proba = load_clf.predict_proba(df)
