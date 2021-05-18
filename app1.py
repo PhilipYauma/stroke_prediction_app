@@ -25,4 +25,4 @@ clf = RandomForestClassifier()
 clf.fit(X,y)
 
 import pickle
-pickle.dump(clf,open('stroke_clf_newest.pkl','wb'))
+pickle.dump(clf,open('STK_clf_n.pkl','wb'))
